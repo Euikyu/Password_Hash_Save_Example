@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Password_Hash_Save_Example"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="250" Width="400" ResizeMode="NoResize">
     <Grid>
-        
+        <TextBlock Text="ID" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,56,0,0" Width="200"/>
+        <TextBox Name="id_TextBox" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,80,0,0" Width="200"/>
+        <TextBlock Text="Password" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,103,0,0" Width="200"/>
+        <PasswordBox Name="passwd_PasswordBox" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,127,0,0" Width="200"/>
+
+        <Button Content="Sign In" HorizontalAlignment="Right" VerticalAlignment="Center" Width="106" Margin="0,50,22,103" Height="55" Click="Button_Click"/>
+        <Button Content="Change Password" HorizontalAlignment="Right" VerticalAlignment="Center" Width="106" Margin="0,115,22,69" Height="25" Click="Button_Click_1"/>
     </Grid>
 </Window>
