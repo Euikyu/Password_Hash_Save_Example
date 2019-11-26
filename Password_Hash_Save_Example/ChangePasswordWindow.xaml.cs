@@ -33,10 +33,14 @@ namespace Password_Hash_Save_Example
         {
             var id = id_TextBox.Text;
             var passwd = currentPasswd_PasswordBox.Password;
+
+            //checking right id n password
             if (CheckID(id) && CheckPassword(SALT, passwd))
             {
                 var changePasswd = changePasswd_PasswordBox.Password;
                 var confirm = confirmPasswd_PasswordBox.Password;
+
+                //checking integrity
                 if(confirm == changePasswd)
                 {
                     ChangePassword(SALT, changePasswd);

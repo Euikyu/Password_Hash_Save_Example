@@ -53,7 +53,7 @@ namespace Password_Hash_Save_Example
             var id = id_TextBox.Text;
             var passwd = passwd_PasswordBox.Password;
 
-            //checking right value
+            //checking right id n password
             if (CheckID(id) && CheckPassword(SALT,passwd))
             {
                 MessageBox.Show("Logged in successfully.");
@@ -69,6 +69,7 @@ namespace Password_Hash_Save_Example
         {
             ChangePasswordWindow w = new ChangePasswordWindow(SALT);
             w.ShowDialog();
+            //setting reload
             Properties.Settings.Default.Reload();
         }
 
